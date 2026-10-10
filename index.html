@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дом Капибара — экскурсия к капибарам в Сочи</title>
+<meta name="description" content="Экскурсия 40 минут в Доме Капибара: покормите и погладьте капибар. Сочи, ул. Егорова, 1/1Б. Билет от 1 700 ₽.">
+<meta property="og:title" content="Дом Капибара — экскурсия к капибарам в Сочи">
+<meta property="og:description" content="Экскурсия 40 минут по предварительной записи. Билет от 1 700 ₽.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/kids-on-sofa.jpg">
+<link rel="icon" href="assets/img/logo-green.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Unbounded:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Дом Капибара","telephone":"+7 988 506-19-99","address":{"@type":"PostalAddress","addressLocality":"Сочи","streetAddress":"ул. Егорова, 1/1Б"}}
+</script>
+<style>
+:root{
+  --bg:#fffaf0; --surface:#f6efe0; --green:#4f7f27; --green-dark:#355a18;
+  --orange:#f7931e; --orange-dark:#d97a08; --text:#2f2418; --muted:#6b5b49;
+  --radius:28px; --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 "Nunito",system-ui,sans-serif;padding-bottom:76px}
+img,svg{max-width:100%}
+img{height:auto}
+a{color:var(--green-dark)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+section{padding:64px 0;position:relative}
+h1,h2,h3{font-family:"Unbounded","Nunito",sans-serif;line-height:1.15;margin:0 0 .6em;text-wrap:balance}
+h1{font-size:clamp(1.9rem,6.5vw,3.8rem);font-weight:700}
+h2{font-size:clamp(1.5rem,4.5vw,2.4rem);font-weight:700;color:var(--green-dark)}
+h3{font-size:1.05rem;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:var(--orange);color:#2f2418;font-weight:800;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s;text-align:center}
+.btn:hover{background:var(--orange-dark);color:#fff}
+@media (hover:hover){.btn:hover{transform:translateY(-2px)}}
+.btn.ghost{background:transparent;border:2px solid var(--green);color:var(--green-dark)}
+.btn.ghost:hover{background:var(--green);color:#fff}
+.todo{background:#fff3b0;border-radius:6px;padding:0 6px;font-weight:600;color:#6b4a00}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,240,.94);backdrop-filter:blur(6px);border-bottom:1px solid #eadfc8}
+.nav{display:flex;align-items:center;gap:16px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Unbounded";font-weight:700;color:var(--green-dark);text-decoration:none;font-size:1.05rem;margin-right:auto}
+.logo img{width:40px;height:40px;display:block}
+.nav a.link{text-decoration:none;font-weight:600;color:var(--text)}
+.nav .btn{min-height:44px;padding:0 20px;white-space:nowrap}
+.logo span{white-space:nowrap}
+@media (max-width:480px){.logo span{display:none}.nav{gap:8px}}
+@media (max-width:860px){.nav a.link{display:none}}
+
+/* hero: фото на весь экран на мобильном, две колонки на десктопе */
+.hero{background:var(--green);color:#fff;padding:0;overflow:hidden;position:relative}
+.hero .grid{display:grid;align-items:center;width:100%}
+.hero .photo{position:absolute;inset:0;margin:0;overflow:hidden}
+.hero .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.hero .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,50,12,.94) 0%,rgba(30,50,12,.78) 50%,rgba(30,50,12,.45) 78%,rgba(30,50,12,.1) 100%)}
+.hero .copy{position:relative;z-index:1;padding:110px 0 64px;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+.hero p.lead{font-size:1.15rem;max-width:34em;margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0;list-style:none}
+.chips li{font-size:.9rem;background:rgba(255,255,255,.2);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 14px;font-weight:600;font-size:.95rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero small{display:block;margin-top:14px;opacity:.92}
+.hero address{font-style:normal;margin:0 0 6px;font-weight:600}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:48px;display:block;z-index:2}
+@media (min-width:860px){
+  .hero{min-height:620px;display:grid}
+  .hero .photo{left:50%}
+  .hero .photo::after{background:linear-gradient(to right,var(--green) 0%,rgba(79,127,39,0) 40%)}
+  .hero .photo img{object-position:50% 40%}
+  .hero .copy{padding:72px 0 88px;max-width:540px;text-shadow:none}.hero h1{font-size:clamp(1.9rem,3.6vw,3.1rem)}
+}
+
+/* cards */
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border-radius:var(--radius);padding:24px;margin:0}
+.card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;margin-bottom:14px;background:#e4d5b5}
+.card p{margin:0}
+.steps{counter-reset:s;list-style:none;padding:0;margin:32px 0 0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.steps li{counter-increment:s;background:#fff;border:2px solid var(--surface);border-radius:20px;padding:16px 16px 16px 56px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800}
+.alt{background:var(--surface)}
+.alt .card{background:#fff}
+.care{display:grid;gap:24px;align-items:center}
+.care figure{margin:0}
+.care figure img{display:block;width:100%;border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover}
+@media (min-width:860px){.care{grid-template-columns:.8fr 1.2fr}}
+
+/* reviews */
+.rating{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 20px}
+.stars{color:#f5a300;letter-spacing:2px;font-size:1.3rem}
+
+/* tickets */
+.price-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:24px}
+.price{background:#fff;border:3px solid var(--orange);border-radius:var(--radius);padding:24px}
+.price .sum{font-family:"Unbounded";font-size:2.2rem;font-weight:700;color:var(--green-dark)}
+.price .kind{margin:.2em 0 0;font-weight:800}
+.slots{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.slots li{background:var(--surface);border-radius:999px;padding:4px 14px;font-weight:600}
+.note{color:var(--muted);font-size:.95rem}
+.buy{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* faq */
+details{background:#fff;border-radius:20px;padding:0 20px;margin-bottom:10px;border:2px solid var(--surface)}
+summary{cursor:pointer;font-weight:800;padding:16px 0;list-style:none;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--green);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 16px}
+.rules{margin-top:24px;background:var(--surface);border-radius:var(--radius);padding:20px 24px}
+.alt .rules{background:#fff}
+
+/* location */
+.loc{display:grid;gap:24px}
+@media (min-width:860px){.loc{grid-template-columns:1fr 1fr;align-items:center}}
+.loc figure{margin:0}
+.loc figure img{display:block;width:100%;max-height:420px;object-fit:cover;border-radius:var(--radius)}
+.loc figcaption{margin-top:8px;color:var(--muted);font-size:.95rem}
+.contacts{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+
+/* final */
+.final{background:var(--green);color:#fff;text-align:center}
+.final h2{color:#fff}
+
+footer.site{background:#2f2418;color:#e9dfcd;padding:40px 0 100px;font-size:.95rem}
+footer.site a{color:#f3c98a}
+footer.site img{display:block;width:72px;height:auto;margin-bottom:12px}
+
+/* sticky mobile bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid #eadfc8;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.bar span{font-weight:800}
+@media (min-width:860px){.bar{display:none}body{padding-bottom:0}footer.site{padding-bottom:40px}}
+
+/* анимации: прогрессивное улучшение, контент виден по умолчанию */
+@media (prefers-reduced-motion: no-preference){
+  .hero .photo img{animation:kenburns 18s ease-in-out infinite alternate}
+  @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.06)}}
+  .hero .copy > *{animation:fadeup .7s ease both}
+  .hero .copy > *:nth-child(2){animation-delay:.1s}
+  .hero .copy > *:nth-child(3){animation-delay:.2s}
+  .hero .copy > *:nth-child(4){animation-delay:.3s}
+  .hero .copy > *:nth-child(5){animation-delay:.4s}
+  @keyframes fadeup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @media (hover:hover){.card{transition:transform .25s}.card:hover{transform:rotate(-.6deg) translateY(-4px)}}
+  @supports (animation-timeline:view()){
+    .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+    @keyframes rise{from{opacity:0;translate:0 36px}to{opacity:1;translate:0 0}}
+  }
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><img src="assets/img/logo-green.png" alt="Дом Капибара" width="40" height="40"><span>Дом Капибара</span></a>
+    <a class="link" href="#about">О доме</a>
+    <a class="link" href="#reviews">Отзывы</a>
+    <a class="link" href="#tickets">Билеты</a>
+    <a class="link" href="#location">Как добраться</a>
+    <a class="link" href="#faq">Вопросы</a>
+    <a class="btn" href="#tickets" data-goal="cta_header_click">Купить билет</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <figure class="photo"><img src="assets/img/kids-on-sofa.jpg" alt="Мальчик и девочка сидят на диване рядом с капибарами" width="871" height="1280" fetchpriority="high"></figure>
+  <div class="wrap grid">
+    <div class="copy">
+      <h1>Дом, где живут капибары. Приходите в гости</h1>
+      <p class="lead">Покормите и погладьте капибар, пока гид рассказывает, как они живут.</p>
+      <ul class="chips">
+        <li>Экскурсия 40 минут</li>
+        <li>Группы до 15 человек</li>
+        <li>Дети с 14 лет сами</li>
+      </ul>
+      <address>Сочи, ул. Егорова, 1/1Б</address>
+      <div class="actions">
+        <a class="btn" href="#tickets" data-goal="cta_hero_click">Выбрать дату и время · от 1&nbsp;700&nbsp;₽</a>
+      </div>
+      <small>Оплата онлайн. Возврат и перенос — через менеджера по телефону или в Telegram.</small>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 48V24C240 0 480 0 720 20s480 24 720 4v24z" fill="#fffaf0"/></svg>
+</section>
+
+<section id="about">
+  <div class="wrap reveal">
+    <h2>Что вас ждёт в гостях</h2>
+    <p>Дом Капибара — место, где можно познакомиться с капибарами на 40-минутной экскурсии. Группы небольшие, до 15 человек. Гид расскажет, как капибары живут, чем питаются и почему их называют самыми спокойными животными.</p>
+    <div class="cards">
+      <article class="card"><img src="assets/img/capybara-standing.jpg" alt="Капибара встала на задние лапы среди гостей" width="1280" height="853" loading="lazy"><h3>Знакомство с капибарами</h3><p>Капибары свободно ходят по залу, а гид объясняет, как с ними себя вести.</p></article>
+      <article class="card"><img src="assets/img/kids-feeding-fruit.webp" alt="Две девочки кормят капибар фруктами из корзинок" width="1280" height="895" loading="lazy"><h3>Покормите капибар</h3><p>Фрукты и овощи подадут на экскурсии. <span class="todo">[чем именно кормят — подтвердить]</span></p></article>
+      <article class="card"><img src="assets/img/capybaras-on-sofa.webp" alt="Три капибары отдыхают на диванах у большого окна" width="1280" height="960" loading="lazy"><h3>Погладьте и сфотографируйтесь</h3><p>Снимайте без вспышки, чтобы не пугать жителей дома.</p></article>
+      <article class="card"><h3>Познакомьтесь с жителями дома</h3><p>Груша, Мандарин, Каштан и Бусинка. <span class="todo">[заменить на настоящие имена]</span></p></article>
+    </div>
+    <ol class="steps">
+      <li>Запись на удобный сеанс</li>
+      <li>Приходите по адресу к началу экскурсии</li>
+      <li>Инструктаж и правила: <span class="todo">[вставить]</span></li>
+      <li>Знакомство с капибарами</li>
+      <li>Фото и выход</li>
+    </ol>
+    <p class="note" style="margin-top:20px">Подходит семьям, парам и компаниям. Дети самостоятельно — с 14 лет; для младших <span class="todo">[правила сопровождения]</span>.</p>
+  </div>
+</section>
+
+<section id="care" class="alt">
+  <div class="wrap reveal care">
+    <figure><img src="assets/img/capybaras-salt.jpg" alt="Две капибары рядом с соляным камнем" width="1280" height="960" loading="lazy"></figure>
+    <div>
+      <h2>Капибарам здесь хорошо — это главное правило</h2>
+      <div class="cards">
+        <article class="card"><h3>Ветеринарный уход</h3><p><span class="todo">[кто и как часто]</span></p></article>
+        <article class="card"><h3>Режим отдыха</h3><p><span class="todo">[перерывы между группами]</span></p></article>
+        <article class="card"><h3>Место, где можно уйти</h3><p><span class="todo">[зона отдыха без гостей — подтвердить]</span></p></article>
+        <article class="card"><h3>Небольшие группы</h3><p>Не больше 15 человек на экскурсию.</p></article>
+      </div>
+      <p class="note">Документы на деятельность есть: <span class="todo">[скан или номер — вставить]</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap reveal">
+    <h2>Гости о нас</h2>
+    <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span>Рейтинг на Яндекс Картах: <span class="todo">[рейтинг]</span>, отзывов: <span class="todo">[число]</span></span></p>
+    <p>Гости пишут про уют, чистоту и заботу о капибарах, благодарят экскурсоводов. Прочитайте отзывы на Яндекс Картах.</p>
+    <div class="buy">
+      <a class="btn" href="https://yandex.ru/maps/org/dom_kapibar/230817806698/reviews/" target="_blank" rel="noopener" data-goal="reviews_click">Читать отзывы на Яндекс Картах</a>
+      <a class="btn ghost" href="#tickets" data-goal="cta_reviews_click">Купить билет</a>
+    </div>
+  </div>
+</section>
+
+<section id="tickets" class="alt">
+  <div class="wrap reveal">
+    <h2>Выберите дату и время</h2>
+    <p>Экскурсия 40 минут, группа до 15 человек.</p>
+    <div class="price-grid">
+      <div class="price"><div class="sum">2&nbsp;100&nbsp;₽</div><p class="kind">Основные сеансы</p>
+        <ul class="slots" aria-label="Время сеансов"><li>12:00</li><li>13:00</li><li>14:00</li><li>15:00</li><li>16:00</li><li>17:00</li><li>18:00</li><li>19:00</li></ul></div>
+      <div class="price"><div class="sum">1&nbsp;700&nbsp;₽</div><p class="kind">Ранний и поздний сеансы</p>
+        <ul class="slots" aria-label="Время сеансов"><li>11:00</li><li>20:00</li></ul></div>
+    </div>
+    <p class="note">Посещение — по предварительной записи. Дети самостоятельно с 14 лет. Цены для детей младше 14 и групповые условия: <span class="todo">[уточнить]</span>.</p>
+    <div class="buy">
+      <a class="btn" href="https://domcapybar.restoplace.ws/" target="_blank" rel="noopener" data-goal="buy_click">Выбрать дату и оплатить</a>
+      <a class="btn ghost" href="https://domcapybar.restoplace.ws/" target="_blank" rel="noopener" data-goal="certificate_click">Подарочный сертификат от 2&nbsp;500&nbsp;₽</a>
+    </div>
+    <p class="note">Бронирование и оплата — на защищённой странице партнёра (Restoplace). Сертификат действует 3 месяца с даты активации. Возврат и перенос — через менеджера.</p>
+    <p>Не хотите онлайн? Позвоните <a href="tel:+79885061999" data-goal="phone_click">+7 (988) 506-19-99</a> или напишите в <a href="https://t.me/dom_capybar_sochi" target="_blank" rel="noopener" data-goal="messenger_click">Telegram</a>.</p>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap reveal loc">
+    <div>
+      <h2>Как нас найти</h2>
+      <p><strong>Сочи, ул. Егорова, 1/1Б</strong><br>Ориентиры и парковка: <span class="todo">[вставить]</span><br>Время в пути от центра и Адлера: <span class="todo">[вставить]</span></p>
+      <div class="contacts">
+        <a class="btn" href="https://yandex.ru/maps/org/dom_kapibar/230817806698/" target="_blank" rel="noopener" data-goal="route_click">Открыть в Яндекс Картах</a>
+        <a class="btn ghost" href="tel:+79885061999" data-goal="phone_click">Позвонить</a>
+        <a class="btn ghost" href="https://t.me/dom_capybar_sochi" target="_blank" rel="noopener" data-goal="messenger_click">Написать в Telegram</a>
+      </div>
+    </div>
+    <figure><img src="assets/img/signboard-night.webp" alt="Вывеска «Дом Капибара» с логотипом-грушей над входом" width="960" height="1280" loading="lazy"><figcaption>Ищите вывеску с грушей</figcaption></figure>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap reveal">
+    <h2>Частые вопросы</h2>
+    <details open><summary>С какого возраста можно приходить?</summary><p>Дети самостоятельно — с 14 лет. Для детей младше: <span class="todo">[правила сопровождения]</span>.</p></details>
+    <details open><summary>Нужна ли предварительная запись?</summary><p>Да, посещение — по предварительной записи. Выберите дату и сеанс в бронировании или позвоните +7 (988) 506-19-99.</p></details>
+    <details open><summary>Как вернуть или перенести билет?</summary><p>Возврат и перенос оформляет менеджер: позвоните +7 (988) 506-19-99 или напишите в Telegram. Условия: <span class="todo">[ссылка на оферту]</span>.</p></details>
+    <details><summary>Сколько длится экскурсия и сколько человек в группе?</summary><p>Экскурсия идёт 40 минут, в группе не больше 15 человек.</p></details>
+    <details><summary>Можно ли кормить и гладить капибар?</summary><p>Да, на экскурсии можно покормить и погладить капибар. Правила: <span class="todo">[вставить]</span>.</p></details>
+    <details><summary>Что делать при аллергии на шерсть?</summary><p><span class="todo">[вставить]</span></p></details>
+    <details><summary>Можно ли фотографировать и снимать видео?</summary><p>Фотографировать можно. Просим без вспышки. <span class="todo">[подтвердить правила видео]</span></p></details>
+    <details><summary>Что надеть и что взять с собой?</summary><p><span class="todo">[вставить]</span></p></details>
+    <details><summary>Что если дождь или экскурсия отменена?</summary><p><span class="todo">[вставить]</span></p></details>
+    <div class="rules"><h3>Правила дома</h3><p><span class="todo">[5–7 коротких правил от владельца]</span></p></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2>Капибары вас ждут</h2>
+    <p>Выберите дату — билет от 1&nbsp;700&nbsp;₽.</p>
+    <a class="btn" href="#tickets" data-goal="cta_final_click">Выбрать дату и время</a>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="assets/img/logo-white.png" alt="Дом Капибара" width="72" height="73" loading="lazy">
+    <strong>Дом Капибара</strong> · Сочи, ул. Егорова, 1/1Б · <a href="tel:+79885061999" data-goal="phone_click">+7 (988) 506-19-99</a> · <a href="https://t.me/dom_capybar_sochi" target="_blank" rel="noopener" data-goal="messenger_click">Telegram</a><br>
+    <span class="todo">[Название юрлица/ИП, ИНН, ОГРН]</span><br>
+    <a href="#">Публичная оферта</a> · <a href="#">Политика возврата</a> · <a href="#">Обработка персональных данных</a> · <a href="#">Правила посещения</a> ·
+    <a href="https://yandex.ru/maps/org/dom_kapibar/230817806698/" target="_blank" rel="noopener">Яндекс Карты</a>
+  </div>
+</footer>
+
+<div class="bar" role="region" aria-label="Быстрая покупка">
+  <span>Билет от 1&nbsp;700&nbsp;₽</span>
+  <a class="btn" href="#tickets" data-goal="cta_sticky_click">Купить билет</a>
+</div>
+
+<script>
+// ID счётчика Яндекс.Метрики. Пока 0 — счётчик не подключается, цели пишутся в консоль.
+var METRIKA_ID = 0;
+function goal(name, params) {
+  if (METRIKA_ID && typeof ym === 'function') { ym(METRIKA_ID, 'reachGoal', name, params); }
+  else if (window.console) { console.debug('goal', name, params || ''); }
+}
+if (METRIKA_ID) {
+  (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+    m[i].l = 1 * new Date();
+    k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+  })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+  ym(METRIKA_ID, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+}
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-goal]');
+  if (el) goal(el.getAttribute('data-goal'));
+});
+// глубина прокрутки 50% и 75%
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  var h = document.documentElement.scrollHeight;
+  [50, 75].forEach(function (p) {
+    var m = document.createElement('i');
+    m.setAttribute('aria-hidden', 'true');
+    m.style.cssText = 'position:absolute;left:0;width:1px;height:1px;pointer-events:none;top:' + Math.round(h * p / 100) + 'px';
+    document.body.appendChild(m);
+    var io = new IntersectionObserver(function (en) {
+      if (en[0].isIntersecting) { goal('scroll_' + p); io.disconnect(); }
+    });
+    io.observe(m);
+  });
+})();
+</script>
+</body>
+</html>
